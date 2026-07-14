@@ -1,0 +1,27 @@
+# Optional: Machine Learning dependencies
+# Install only if you plan to train RL agents
+
+# PyTorch (choose one based on your CUDA version)
+# CUDA 12.1:
+# torch>=2.0.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# CUDA 11.8:
+# torch>=2.0.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# CPU only:
+# torch>=2.0.0 torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+# OR TensorFlow
+# tensorflow>=2.13.0
+
+# Common RL libraries
+# stable-baselines3>=2.0.0
+# tianshou>=0.5.0
+# ray[rllib]>=2.6.0
+
+# Data processing
+# pandas>=2.0.0
+# matplotlib>=3.7.0
+# opencv-python>=4.8.0
+# wandb>=0.15.0  # experiment tracking
+# tensorboard>=2.13.0

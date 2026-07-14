@@ -1,0 +1,63 @@
+{
+  "mode": "demo",
+  "scene": {
+    "robot": "panda",
+    "arm_max_velocity": 1.0,
+    "arm_max_acceleration": 4.0,
+    "static_positions": false,
+    "headless": true
+  },
+  "action": {
+    "arm_mode": "JointVelocity",
+    "gripper_mode": "Discrete"
+  },
+  "observation": {
+    "cameras": {
+      "front": {
+        "enabled": true,
+        "rgb": true,
+        "depth": false,
+        "mask": false,
+        "point_cloud": false,
+        "image_size": [
+          256,
+          256
+        ]
+      },
+      "left_shoulder": {
+        "enabled": false
+      },
+      "right_shoulder": {
+        "enabled": false
+      },
+      "overhead": {
+        "enabled": false
+      },
+      "wrist": {
+        "enabled": false
+      }
+    },
+    "low_dim": {
+      "joint_positions": true,
+      "joint_velocities": true,
+      "joint_forces": false,
+      "gripper_pose": true,
+      "gripper_open": true,
+      "task_low_dim_state": true
+    }
+  },
+  "episode": {
+    "num_episodes": 3,
+    "max_steps": 40
+  },
+  "recording": {
+    "enabled": true,
+    "camera": "front",
+    "fps": 30,
+    "output_dir": "videos"
+  },
+  "task": {
+    "name": "TakePlateOffColoredDishRack",
+    "variation": 0
+  }
+}
